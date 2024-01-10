@@ -6,9 +6,7 @@ import { PrismaClient } from '@prisma/client';
 
 const router = Router();
 const prisma = new PrismaClient();
-
 const SECRET: string = process.env.SECRET as string;
-const port = process.env.PORT;
 
 /* creator register */
 router.post('/register', async (req, res) => {
